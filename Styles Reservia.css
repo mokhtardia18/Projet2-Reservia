@@ -1,0 +1,57 @@
+div p
+{
+    
+    font-size: 12px;
+}
+.bouton
+{
+    
+    background-color:dodgerblue;
+}
+input:focus
+{
+   background-color: aqua; 
+    
+}
+
+ul
+{
+  list-style: none;
+
+      }
+nav
+{
+    
+   float: right; 
+    
+}
+li
+{
+    display: inline-block;
+    width: 150px;
+    text-decoration-line: none;
+}
+input:hover
+{color: red;}
+
+
+/* ici c'est la partie hebergement*/
+
+#Hebergement
+{
+   background-color: lightgray;
+margin-left: 100;
+    
+}
+ article
+{
+  
+    width:300px;
+  height: 270px;
+    border-radius: 40px;
+    float: left;
+    display: inline-block;
+    
+    
+}
+
