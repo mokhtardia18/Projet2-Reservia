@@ -1,22 +1,92 @@
-p
+body
 {
 font-family: Raleway;
+    font-size: 17px;
+    margin-left: 50px;
+    width: 100%;
+        
 }
-div p
+
+.logo img
+{
+    width: 10%;
+}
+
+form
+{
+    margin-top: 2em;
+
+}
+.box
+{
+    display: flex;
+}
+.box .lieu
+{
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 0.8em;
+}
+.box input[ type="text"]
+{
+    border: #F2F2F2 solid 1px;
+    width: 180px;
+}
+
+.box input[ type="submit"]
 {
     
-    font-size: 12px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: #0065FC;
 }
-.bouton
+.possibilities
 {
-    
-    background-color:#0065FC;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 1.5em 1.5em 0 1.5em;
+    font-weight: bold;
 }
-input:focus
+.Filtres
 {
-   background-color: aqua; 
+    margin-right: 3%;
+}
+
+.choice
+{
+  margin-top: 0.5em;
+    margin-right: 3%;
+    list-style: none; 
+    border: #F2F2F2 solid 1px;
+    border-radius: 15px;
+    padding-right: 0.5em;
+    border-left: none;
+    font-weight: bold;
     
 }
+.choice:hover
+{
+  background-color: lightblue;
+}
+.possibilities i 
+{
+    padding: 0.4em;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+    margin-right: 0.8em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+} 
+.possibilities a
+ {
+    text-decoration: none;
+    color: black;
+}
+
 
 ul
 {
@@ -26,89 +96,64 @@ ul
 nav
 {
     
-   float: right;
-    
-    
-    
+   float: right; 
     
 }
 
-li
+nav li
 {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     
     line-height: 25px;
-}
-#details li
-{ 
-    display: inline-block;
-    width: 450px;
-    float: left;
-        
-}
-input:hover
-{color: red;}
-
-.info
-{
-   margin-bottom: 20px;
-    margin-top: 10px;
-   
+    
 }
 
-
-.Filtres p
+a
 {
     display: inline;
+   
 }
-
-
-
-input::placeholder
-{
-  font-weight: bold;  
-}
-
-
-.ovale
-{
-    display: inline-block;
-    width: 150px;
-    height: 25px;
-    border-radius: 60px / 40px;
-    background: white;
-    border:ridge;
-    margin-bottom: 5px;
-}
-.ovale:hover
-{color: blue;
-    color: 
-}
-
-
-.ovale i
-{
-    padding-left:10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-  background-color: lightblue;
-  width: 20px;
-    height: 15px;
-    border-radius: 60px / 40px;
-    
- 
-
-}
-.fas fa-money-bill-wave
-{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background: red;
+.upline a::before{
+    content: " ";
+    display: block;
+    height: 0.5px;
+    width: 100px;
+    position: absolute;
+    background: blue;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out ;
     
 }
+.upline a:hover::before
+{
+    transform: scale(1);
+}
+.wrapper
+{
+    margin-top: 20px;
+}
+.info
+{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.info i
+{margin-top: 20px;
+    margin-right: 5px;
+    border: solid #F2F2F2 2px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.info p
+{
+    display: inline;
+
 
 
 /* ici c'est la partie dev*/
@@ -128,15 +173,19 @@ form
   background-color: #F2F2F2;
     border-radius: 20px;
     width:900px;
-  height: 550px;
+  height: 650px;
     float: left;
     
     margin-bottom: 100px;
     
 }
-#Populaires h5
+#populaires h6
 {
     margin-left: 60px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: inline;
 }
 #hebergement h5
 {
@@ -146,7 +195,7 @@ form
 {
     margin-left: 60px;
 }
-#Activites h5
+#activites h5
 {
    margin-top: 600px;
     margin-right: 600px;
@@ -193,36 +242,45 @@ margin-left: 30px;
 }
 
 
-#Populaires
+#populaires
 {
     background-color:#F2F2F2;
     float:right;
     width: 450px;
     border-radius: 20px;
-    height: 550px;   
+    height: 650px;
+    margin-right: 100px;
 }
 
 
-#Populaires article
+#populaires article
 {
  display: inline-block;
     background-color: white;
    border-radius: 40px; 
     margin-left: 50px;
+    margin-bottom: 20px;
+   height: 140px;
+    margin-top: 20px;
     
      
 }
 
-#Populaires img
+#populaires img
 {
      width: 150px;
-    height: 110px;
-    padding-top: 10px;
+    height: 130px;
+    padding-top: 2px;
     padding-left: 10px;
     padding-right: 20px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px; 
   
+}
+h6 i
+{
+    float: right;
+    margin-right: 10px;
 }
 .overlay2
 {
@@ -231,10 +289,11 @@ margin-left: 30px;
     height: 130px;    
 }
 
-#Activites
+#activites
 {
     width: 100%;
     height: 500px;
+    margin-bottom: 30px;
 
    
     
@@ -285,7 +344,7 @@ margin-left: 30px;
       border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-#Activites article
+#activites article
 {
     display: inline-block;
     background-color:snow;
@@ -314,15 +373,47 @@ margin-left: 30px;
    
 }
 
-
-.cl-footer 
+footer
 {
     width: 100%;
     height: 150px;
-    float: left;
-    background-color: #F2F2F2;
-
+    margin-top: 20px;
+    background-color: #F2F2F2; 
+    display: flex;
+    
+    
+    }
+footer div
+{
+display: flex;
+flex-direction: column;
+    }
+footer ul
+{
+    margin-left: 90px;
 }
+.column2
+{
+    
+    margin-left: 60px;
+    margin-right: 50px;
+}
+.column3
+{
+    
+    
+    margin-left: 100px;
+}
+
+footer p {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+
+
+
  
 
 .stars
@@ -330,4 +421,3 @@ margin-left: 30px;
  margin-top: 2px;
   
 }
-
